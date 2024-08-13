@@ -1,0 +1,3250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wsmenu>.wsmenu-list>li>ul.sub-menu>li:hover>ul.sub-menu,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+    -o-transition: -o-transform .4s,opacity .4s;
+    -ms-transition: -ms-transform .4s,opacity .4s;
+    -moz-transition: -moz-transform .4s,opacity .4s;
+    -webkit-transition: -webkit-transform .4s,opacity .4s
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu,.wsmenu>.wsmenu-list>li>ul.sub-menu {
+    -o-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -o-transition: -o-transform .3s,opacity .3s;
+    -ms-transition: -ms-transform .3s,opacity .3s;
+    -moz-transition: -moz-transform .3s,opacity .3s;
+    -webkit-transition: -webkit-transform .3s,opacity .3s
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-75deg);
+    -o-transform: rotateX(-75deg);
+    -moz-transform: rotateX(-75deg);
+    -webkit-transform: rotateX(-75deg)
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+    transform-style: preserve-3d;
+    min-width: 220px;
+    left: 100%;
+    top: 0;
+    list-style: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden
+}
+
+.wsmenu>.wsmenu-list>li:hover>.wsmegamenu,.wsmenu>.wsmenu-list>li:hover>ul.sub-menu,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0);
+    -o-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -webkit-transform: rotateX(0)
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu {
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-75deg);
+    -o-transform: rotateX(-75deg);
+    -moz-transform: rotateX(-75deg);
+    -webkit-transform: rotateX(-75deg)
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li:hover>ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+    -o-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transform: rotateX(0);
+    -o-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -webkit-transform: rotateX(0)
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+    -o-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-75deg);
+    -o-transform: rotateX(-75deg);
+    -moz-transform: rotateX(-75deg);
+    -webkit-transform: rotateX(-75deg)
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu {
+    opacity: 0;
+    visibility: hidden;
+    transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-75deg);
+    -o-transform: rotateX(-75deg);
+    -moz-transform: rotateX(-75deg);
+    -webkit-transform: rotateX(-75deg);
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 70px;
+    color: #000;
+    z-index: 1000;
+    margin: 0;
+    text-align: left;
+    padding: 14px 5px;
+    font-size: 15px;
+    border: 1px solid #eee;
+    background-color: #fff
+}
+
+.wsmenu body,.wsmenu h1,.wsmenu h2,.wsmenu h3,.wsmenu h4,.wsmenu h5,.wsmenu h6,.wsmenu html,.wsmenu iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Helvetica,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: antialiased;
+    font-smooth: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+    font-smooth: subpixel-antialiased
+}
+
+.wsmenu .cl,.wsmenu:after,.wsmenu>.wsmenu-list>li.rightmenu:after {
+    clear: both
+}
+
+.wsmenu img,embed,object,video {
+    border: 0;
+    max-width: 100%
+}
+
+.wsmenu a:focus {
+    outline: 0
+}
+
+.wsmenu-list>li.rightmenu:after,.wsmenu:after,.wsmenu:before,.wsmenu>.wsmenu-list>li.rightmenu:before {
+    content: "";
+    display: table
+}
+
+.wsmenucontainer {
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat
+}
+
+.wsmainfull {
+    width: 100%;
+    height: 70px;
+    position: relative
+}
+
+.wsmainwp {
+    margin: 0 auto;
+    max-width: 1140px
+}
+
+.desktoplogo {
+    padding: 16px 0 0;
+    margin: 0;
+    float: left
+}
+
+.desktoplogo img {
+    max-width: 110%!important
+}
+
+.wsmenu {
+    font-family: Helvetica,sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    width: 81%;
+    float: right;
+    display: block
+}
+
+.wsmenu>.wsmenu-list {
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    padding: 0
+}
+
+.wsmenu>.wsmenu-list>li {
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left
+}
+
+.wsmenu>.wsmenu-list>li>a {
+    display: block;
+    padding: 10px 28px 10px 19px;
+    line-height: 50px;
+    text-decoration: none;
+    position: relative
+}
+
+.wsmenu>.wsmenu-list>li:last-child>a {
+    border-right: 0px
+}
+
+.wsmenu>.wsmenu-list>li a.menuhomeicon {
+    padding-left: 25px;
+    padding-right: 25px
+}
+
+.wsmenu>.wsmenu-list>li>a i {
+    display: inline-block;
+    font-size: 14px;
+    line-height: inherit;
+    margin-right: 12px;
+    vertical-align: top
+}
+
+.wsmenu>.wsmenu-list>li>a.menuhomeicon i {
+    margin-right: 0;
+    font-size: 15px
+}
+
+.wsmenu>.wsmenu-list>li>a .wsarrow:after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+    content: "";
+    float: right;
+    right: 11px;
+    height: 0;
+    margin: 0 0 0 14px;
+    position: absolute;
+    text-align: right;
+    top: 33px;
+    width: 0
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu a {
+    padding: 0 30px 0 20px;
+    border-right: none
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu a i {
+    font-size: 15px
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu {
+    float: right;
+    zoom:1}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch {
+    float: right;
+    width: 210px;
+    height: 39px;
+    position: relative;
+    margin: 16px 0 0
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .searchicon {
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input {
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-indent: 15px;
+    height: 39px;
+    z-index: 2;
+    outline: 0;
+    color: #333;
+    background-color: #efefef;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+    font-size: 12px
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input::placeholder {
+    color: #a9a9a9
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus {
+    color: #333;
+    width: 230px
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus~.btnstyle i {
+    color: #000;
+    opacity: 1
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus~.searchicon {
+    opacity: 1;
+    z-index: 3;
+    color: #fff
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .btnstyle {
+    top: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    line-height: 30px;
+    cursor: pointer;
+    opacity: .3;
+    color: #333;
+    z-index: 1000;
+    background-color: transparent;
+    border: 0 solid;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .btnstyle i {
+    line-height: 37px;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .btnstyle:hover i {
+    opacity: 1
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu {
+    position: absolute;
+    top: 60px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    min-width: 190px;
+    background-color: #fff;
+    border: 1px solid #eee
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+    background-image: none;
+    color: #666;
+    border-right: 0px solid;
+    text-align: left;
+    display: block;
+    line-height: 22px;
+    padding: 8px 12px;
+    text-transform: none;
+    font-size: 13px;
+    letter-spacing: normal
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a:hover,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+    text-decoration: none
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a>i,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>i,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>i {
+    margin-right: 9px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .title {
+    border-bottom: 1px solid #ccc;
+    padding: 9px 5px 2px 0;
+    font-size: 17px;
+    color: #424242;
+    margin: 0 0 12px;
+    text-align: left;
+    height: 39px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .wsmwnutxt {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+    color: #424242;
+    margin-top: 10px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li {
+    display: block;
+    white-space: nowrap;
+    text-align: left
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li a {
+    line-height: 18px;
+    border-right: 0;
+    text-align: left;
+    padding: 6px 0;
+    background: #fff;
+    display: block;
+    color: #424242;
+    font-size: 13px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu li a:hover {
+    background: 0 0;
+    text-decoration: underline
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li i {
+    font-size: 12px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu li i {
+    margin-right: 5px;
+    text-align: center;
+    width: 18px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .mrgtop {
+    margin-top: 15px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .show-grid div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #dbdbdb;
+    border: 1px solid #e7e7e7;
+    color: #6a6a6a;
+    margin: 2px 0;
+    font-size: 13px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu.halfmenu {
+    width: 30%;
+    right: auto;
+    left: auto
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu.halfdiv {
+    width: 20%;
+    right: auto;
+    left: auto
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form {
+    width: 100%;
+    display: block
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type=text] {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    color: #000;
+    font-size: 13px;
+    padding: 8px 5px;
+    margin-bottom: 8px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form textarea {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    color: #000;
+    font-size: 13px;
+    padding: 8px 5px;
+    margin-bottom: 8px;
+    min-height: 122px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type=submit] {
+    width: 25%;
+    display: block;
+    height: 32px;
+    float: right;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: #e1e1e1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type=button] {
+    width: 25%;
+    display: block;
+    height: 32px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    background-color: #e1e1e1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-inner .item img {
+    width: 100%
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-control-next,.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-control-prev {
+    opacity: .8
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-caption {
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    font-size: 13px;
+    height: 31px;
+    left: 0;
+    padding: 7px 0;
+    right: 0;
+    width: 100%
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text {
+    padding: 0;
+    font-size: 14px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text ul {
+    padding: 0;
+    margin: 0
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text p {
+    text-align: justify;
+    line-height: 24px;
+    color: #656565
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text ul li {
+    display: block;
+    padding: 2px 0;
+    line-height: 22px
+}
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text ul li a {
+    color: #656565
+}
+
+.hometext,.wsmenu .wsmenu-click,.wsmenu .wsmenu-click02,.wsmobileheader {
+    display: none
+}
+
+.overlapblackbg {
+    opacity: 0;
+    visibility: hidden
+}
+
+@media only screen and (max-width: 991px) {
+    body.wsactive,html {
+        overflow:hidden
+    }
+
+    .desktoplogo,.topheaderstyle .col-md-2.text-center.remove-social-icon,.topheaderstyle .col-sm-6.contact-info-mobile,.topheaderstyle ul.top-address span.icon,.wsmenu>.wsmenu-list>li>a .wsarrow:after,.wsmenu>.wsmenu-list>li>a.menuhomeicon i,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a>i,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>i,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>i {
+        display: none
+    }
+
+    .wsmenu>.wsmenu-list,.wsmobileheader {
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        -ms-transition: .25s ease-in-out
+    }
+
+    .callusbtn,.callusbtn:hover i {
+        color: #a9a9a9
+    }
+
+    body,html {
+        height: 100%
+    }
+
+    html {
+        -webkit-overflow-scrolling: touch
+    }
+
+    body {
+        overflow-y: auto;
+        overflow-x: hidden
+    }
+
+    section.topheaderstyle {
+        padding: 0!important
+    }
+
+    .topheaderstyle ul.top-address li.top-add-m-not {
+        margin: 0 10px;
+        position: relative
+    }
+
+    .topheaderstyle ul.top-address li.top-add-m-not a {
+        font-size: 13px!important;
+        font-family: Roboto
+    }
+
+    .topheaderstyle ul.top-address li.top-add-m-not:after {
+        content: "|";
+        position: absolute;
+        right: -12px;
+        font-size: 15px;
+        top: -2px
+    }
+
+    .topheaderstyle ul.top-address li:last-child.top-add-m-not:after {
+        display: none
+    }
+
+    .wsmainfull {
+        height: 0
+    }
+
+    .wsmenucontainer {
+        background-attachment: local;
+        background-position: 33% 0
+    }
+
+    .wsmenu {
+        width: 100%;
+        background: rgba(0,0,0,0);
+        left: 0;
+        overflow-y: hidden;
+        padding: 0;
+        top: 0;
+        visibility: hidden;
+        position: fixed;
+        margin: 0
+    }
+
+    .wsmenu>.wsmenu-list {
+        height: auto;
+        min-height: 100%;
+        width: 300px;
+        background: #fff;
+        padding-bottom: 0;
+        margin-left: -300px;
+        display: block;
+        text-align: center;
+        transition: .25s ease-in-out
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        top: 0;
+        opacity: 1;
+        visibility: visible
+    }
+
+    .wsmenu>.wsmenu-list>li {
+        width: 100%;
+        display: block;
+        float: none;
+        border-right: none;
+        background-color: transparent;
+        position: relative;
+        white-space: inherit;
+        clear: right
+    }
+
+    @supports (-webkit-overflow-scrolling:touch) {
+        .wsmenu>.wsmenu-list>li:last-child {
+            padding-bottom: 110px
+        }
+    }
+
+    .wsmenu>.wsmenu-list>li>a {
+        padding: 12px 32px 12px 17px;
+        font-size: 14px;
+        text-align: left;
+        border-right: 0px solid;
+        background-color: #fff;
+        color: #666;
+        line-height: 25px;
+        border-bottom: 1px solid rgba(0,0,0,.13);
+        position: static
+    }
+
+    .wsmenu>.wsmenu-list>li a.menuhomeicon {
+        padding-left: 17px;
+        padding-right: 17px;
+        border-top: 1px solid rgba(0,0,0,.13)
+    }
+
+    .wsmenu>.wsmenu-list>li>a>i {
+        font-size: 16px;
+        color: #bfbfbf
+    }
+
+    .wsmenu>.wsmenu-list>li:hover>a {
+        background-color: rgba(0,0,0,.08);
+        text-decoration: none
+    }
+
+    .wsmenu>.wsmenu-list>li>a>.hometext {
+        display: inline-block
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu {
+        display: none;
+        position: relative;
+        background-color: #fff;
+        border: none;
+        padding: 0;
+        transform: none;
+        transition: inherit;
+        -webkit-transform-style: flat
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a {
+        line-height: 20px;
+        font-size: 13px;
+        padding: 10px 0 10px 16px;
+        color: #383838
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li span+a,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li span+a,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li span+a {
+        padding-right: 30px
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a:hover,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+        background-color: #e7e7e7;
+        color: #666;
+        text-decoration: underline
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu li:hover>a {
+        background-color: #e7e7e7;
+        color: #666
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+        width: 100%;
+        position: static;
+        left: 100%;
+        display: none;
+        margin: 0;
+        padding: 0;
+        border: 0 solid;
+        transform: none;
+        transition: inherit;
+        -webkit-transform-style: flat
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li {
+        margin: 0;
+        padding: 0;
+        position: relative
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
+        line-height: 20px;
+        font-size: 13px;
+        padding: 10px 0 10px 26px;
+        color: #383838
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>a,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a.active,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
+        color: #000
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu .show-grid div,.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
+        margin: 0
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+        line-height: 20px;
+        font-size: 13px;
+        padding: 10px 0 10px 34px;
+        color: #383838
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu {
+        color: #666;
+        display: none;
+        position: relative;
+        top: 0;
+        padding: 10px 0;
+        border: 0 solid;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        transition: inherit;
+        border-bottom: 1px solid rgba(0,0,0,.13);
+        -webkit-transform-style: flat
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu.halfmenu {
+        width: 100%;
+        margin: 0;
+        padding: 5px 0 10px
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu .title {
+        color: #666;
+        font-size: 15px;
+        padding: 10px 8px 10px 0
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu>ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 13px
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu>ul>li>a {
+        padding: 9px 14px;
+        line-height: normal;
+        font-size: 13px;
+        background-color: #e7e7e7;
+        color: #666
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu>ul>li>a:hover {
+        background-color: #000
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu ul li.title {
+        line-height: 26px;
+        color: #666;
+        margin: 0;
+        font-size: 15px;
+        padding: 7px 0;
+        background-color: transparent
+    }
+
+    .wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus,.wsmenu>.wsmenu-list>li>.wsmegamenu.halfdiv {
+        width: 100%
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form {
+        padding: 5px 0 62px
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type=button],.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type=submit] {
+        width: 46%
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form textarea {
+        min-height: 100px
+    }
+
+    .wsmobileheader {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+        padding-left: 15px;
+        left: 0;
+        z-index: 10002;
+        height: 54px;
+        background-color: #fff;
+        transition: .25s ease-in-out;
+        box-shadow: 0 0 1px rgba(0,0,0,.3)
+    }
+
+    .callusbtn,.wsanimated-arrow {
+        top: 0;
+        z-index: 102;
+        position: absolute
+    }
+
+    .wsactive .wsmenucontainer,.wsactive .wsmobileheader,.wsmenucontainer {
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        -ms-transition: .25s ease-in-out
+    }
+
+    .wsactive .wsmobileheader,.wsmenucontainer {
+        transition: .25s ease-in-out
+    }
+
+    .wsmobileheader .smllogo {
+        display: inline-block;
+        margin-top: 12px
+    }
+
+    .wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch {
+        width: 86%;
+        margin: 7%;
+        padding: 0
+    }
+
+    .wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input {
+        border-radius: 50px
+    }
+
+    .callusbtn {
+        font-size: 17px;
+        right: 5px;
+        transition: .4s ease-in-out;
+        padding: 13px 14px
+    }
+
+    .callusbtn i {
+        vertical-align: top;
+        margin-top: 4px
+    }
+
+    .wsanimated-arrow {
+        right: 15px;
+        -webkit-transition: .4s ease-in-out;
+        -moz-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+        -ms-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+        cursor: pointer;
+        padding: 16px 35px 16px 0;
+        margin: 7px 0 0 15px
+    }
+
+    .wsanimated-arrow span,.wsanimated-arrow span:after,.wsanimated-arrow span:before {
+        cursor: pointer;
+        height: 2px;
+        width: 23px;
+        background: #000;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: .5s ease-in-out
+    }
+
+    .wsanimated-arrow span:before {
+        top: -7px;
+        width: 23px
+    }
+
+    .wsanimated-arrow span:after {
+        bottom: -7px;
+        width: 23px
+    }
+
+    .wsactive .wsanimated-arrow span {
+        background-color: transparent
+    }
+
+    .wsactive .wsanimated-arrow span:before,.wsactive .wsanimated-arrow.active span:after {
+        top: 7px
+    }
+
+    .wsactive .wsanimated-arrow span:before {
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        bottom: 0
+    }
+
+    .wsactive .wsanimated-arrow span:after {
+        width: 23px;
+        transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg)
+    }
+
+    .overlapblackbg {
+        right: 0;
+        width: calc(100% - 300px);
+        height: 100vh;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0,0,0,.45);
+        cursor: pointer
+    }
+
+    .wsactive .wsmenu .overlapblackbg {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 1.5s ease-in-out;
+        -moz-transition: opacity 1.5s ease-in-out;
+        -ms-transition: opacity 1.5s ease-in-out;
+        -o-transition: opacity 1.5s ease-in-out
+    }
+
+    .wsactive .wsmenucontainer {
+        margin-left: 0;
+        transition: .25s ease-in-out
+    }
+
+    .wsactive .wsmenu {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        visibility: visible;
+        z-index: 1000;
+        top: 0
+    }
+
+    .wsactive .wsmenu>.wsmenu-list {
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        -ms-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        margin-left: 0
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmenu-click {
+        height: 49px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        cursor: pointer;
+        width: 50%
+    }
+
+    .wsmenu>.wsmenu-list>li .wsmenu-click.ws-activearrow>i {
+        transform: rotate(-45deg);
+        margin-top: 23px
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmenu-click>i {
+        display: block;
+        height: 8px;
+        width: 8px;
+        float: right;
+        transform: rotate(-225deg);
+        margin: 18px 18px 0 0
+    }
+
+    .wsmenu>.wsmenu-list>li>.wsmenu-click>i:before,.wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02>i:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-width: 1.5px 1.5px 0 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,.4);
+        transition: .2s;
+        display: block;
+        transform-origin: 100% 0
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02 {
+        height: 41px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        cursor: pointer;
+        width: 100%
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02>i {
+        display: block;
+        height: 8px;
+        width: 8px;
+        float: right;
+        transform: rotate(-225deg);
+        margin: 14px 18px 0 0
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02>i.wsmenu-rotate {
+        transform: rotate(-45deg);
+        margin-top: 19px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1162px) {
+    .desktoplogo {
+        margin-left:12px
+    }
+
+    .wsmenu>.wsmenu-list>li>a>.wsarrow {
+        display: none
+    }
+
+    .wsmenu>.wsmenu-list>li>a {
+        padding-left: 12px;
+        padding-right: 12px
+    }
+
+    .wsmenu>.wsmenu-list>li a.menuhomeicon {
+        padding-left: 22px;
+        padding-right: 22px
+    }
+}
+
+ul.wsmenu-list>li>a {
+    font-size: 18px!important;
+    font-family: Roboto,sans-serif;
+    color: #093d78!important;
+    font-weight: 600
+}
+
+ul.wsmenu-list>li>ul.sub-menu>li>a {
+    font-size: 15px!important;
+    color: #093d78!important;
+    font-weight: 700
+}
+
+.wsmenu>.wsmenu-list>li>.wsmenu-click>i {
+    border-radius: 50%
+}
+
+.wsmenu>.wsmenu-list>li>a {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+ul.wsmenu-list>li>ul.sub-menu ul.sub-menu {
+    background: #dfdfdf!important
+}
+
+ul.wsmenu-list>li>ul.sub-menu ul.sub-menu li a {
+    font-size: 14px!important;
+    line-height: 14px!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important
+}
+
+nav.wsmenu.clearfix {
+    margin-top: 80px
+}
+
+@media only screen and (min-width: 992px) {
+    .wsmenu>.wsmenu-list>li>ul.sub-menu i,ul.top-address a span.icon,ul.top-address li.top-add-m-not:first-child a:before,ul.top-address li.top-social-link a:before,ul.wsmenu-list img {
+        display:none
+    }
+
+    ul.top-address a {
+        position: relative;
+        padding: 0 4px
+    }
+
+    ul.top-address a:before {
+        content: "|";
+        position: absolute;
+        left: -3px;
+        top: -1px
+    }
+
+    ul.top-address {
+        display: flex
+    }
+
+    ul.top-address li.top-social-link span {
+        display: block!important
+    }
+
+    ul.top-address li.top-social-link a {
+        height: 20px;
+        display: block
+    }
+
+    .desktop-d-none {
+        display: none!important
+    }
+
+    .wsmainfull .container-fluid {
+        display: flex;
+        gap: 15px
+    }
+
+    .desktoplogo {
+        padding: 3px 0 0
+    }
+
+    .wsmenu>.wsmenu-list>li>a {
+        line-height: 60px;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    .wsmainfull {
+        width: 100%;
+        height: auto;
+        position: relative
+    }
+
+    nav.wsmenu.clearfix {
+        margin-top: 0
+    }
+
+    ul.wsmenu-list>li>a {
+        font-size: 14px!important
+    }
+
+    .wsmenu>.wsmenu-list>li>a .wsarrow:after {
+        top: 26px
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li:hover>ul.sub-menu {
+        background: #fff!important;
+        top: -1px
+    }
+
+    .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
+        color: #093d78;
+        font-weight: 600
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mobile-d-none,.oit-head-menu {
+        display:none!important
+    }
+
+    .mobile-d-show {
+        display: block!important
+    }
+
+    ul.top-address {
+        display: flex;
+        justify-content: center
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section>
+    <div class="wsmainfull">
+         <div class="container-fluid">
+             <div class="desktoplogo"><a href=""><img src="" alt="Finance"></a></div>
+             <!--Main Menu HTML Code-->
+             <nav class="wsmenu clearfix"><div class="overlapblackbg"></div>
+                 <ul class="wsmenu-list">
+                     <li aria-haspopup="true"><span class="wsmenu-click"><i class="wsmenu-arrow"></i></span><a href="#/"><img src=""> MSME <span class="wsarrow"></span></a>
+                         <ul class="sub-menu">
+                             <li aria-haspopup="true"><span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span><a href="#"><i class="fas fa-angle-right"></i>Secured Loan</a>
+                                 <ul class="sub-menu">
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Loan Against Property</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Working Capital Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Drop Line Overdraft</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Bank Guarantee</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Letter of Credit</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Industrial Property Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Commercial Property Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Builder Inventory Funding</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Loan Against Rent Receivable</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Bank Overdraft</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>LC Discounting</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Loan Against Bank Guarantee</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Infrastructure Construction Loan</a></li>
+                                 </ul>
+                             </li>
+                             <li aria-haspopup="true"><span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span><a href="#"><i class="fas fa-angle-right"></i>Unsecured
+                                     Loan</a>
+                                 <ul class="sub-menu">
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Business Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Professional Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Dropline Overdraft Limit</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Machinery Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>MSME Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Capital Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Construction Equipment Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Supply Chain Finance</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Dealer Finance</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Vendor Finance</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Startup Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Stand up Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Medical Equipment Finance</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Factoring Limit</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>warehouse receipt Finance</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Loan Against Credit Card Receipt</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Mudra Loan</a></li>
+                                 </ul>
+                             </li>
+                             <li aria-haspopup="true"><span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span><a href="#"><i class="fas fa-angle-right"></i>Project Loan </a>
+                                 <ul class="sub-menu">
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Project Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Solar Power Project Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Solar Rooftop</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Cold Storage Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Warehouse Construction Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>School Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>College Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Hotel Funding</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Construction builders</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Hydro Power Project Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Transport Logistics</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Energy sector loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Water &amp; Sanitation Funding</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Hospital Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Tourism &amp; Hospitality</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Healthcare Industry</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Power Project</a></li>
+                                 </ul>
+                             </li>
+                             <li aria-haspopup="true"><span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span><a href="#"><i class="fas fa-angle-right"></i>Exporter &amp;
+                                     Importer Loan </a>
+                                 <ul class="sub-menu">
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Pre Shipment Credit (INR)</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Post Shipment Credit (INR)</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Pre Shipment Credit (Fx)</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Post Shipment Credit (Fx)</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Supplier Credit</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Export Project Finance</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Export Bill Discounting</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Foreign Currency Term Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Standby Letter of Credit</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Packing Credit Limit</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Buyer Credit</a></li>
+                                 </ul>
+                             </li>
+                             <li aria-haspopup="true"><span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span><a href="#"><i class="fas fa-angle-right"></i>Other Loan </a>
+                                 <ul class="sub-menu">
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>NBFC Funding</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Promoter Funding Share</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Venture Debt</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Sale Bill Discounting</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Purchase Bill Discounting</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Debt Consolidation</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Stress Assets Finance</a></li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </li>
+ 
+                     <li aria-haspopup="true"><span class="wsmenu-click"><i class="wsmenu-arrow"></i></span><a href="#"><img src="https://financeseva.com/assets/frontend/icons/PERSONAL_LOAN.SVG"> Personal <span class="wsarrow"></span></a>
+                         <ul class="sub-menu">
+                             <li aria-haspopup="true"><span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span><a href="#"><i class="fas fa-angle-right"></i>Personal Need
+                                     Loans</a>
+                                 <ul class="sub-menu">
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Personal Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Overdraft Against Salary</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Home Loan</a></li>
+                                     <li aria-haspopup="true"><a href="https://financeseva.com/home-loan-without-map"><i class="fas fa-angle-right"></i>Home Loan Without Map</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Home Loan Overdraft Facility</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>NRI Home Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Home Construction Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Loan Against Property Without Map</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Loan Against Property Salary</a></li>
+                                     <li aria-haspopup="true"><a href="#"></i>NRI Loan Against Property</a></li>
+                                     <li aria-haspopup="true"><a href="#"></i>Loan Against Securities</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Education Loan</a></li>
+                                     <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Used Car Loan</a></li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </li>
+ 
+                     
+                     
+                     <li><a href="#"><img src="https://financeseva.com/assets/frontend/icons/NEWS.SVG"> About us</a></li>
+                     <li><a href="#"><img src="https://financeseva.com/assets/frontend/icons/NEWS.SVG"> Contact us</a></li>
+                     <li><a href="#"><img src="https://financeseva.com/assets/frontend/icons/NEWS.SVG"> Services</a></li>
+                     
+                     
+ 
+ 
+                 </ul>
+             </nav>
+             <!--Menu HTML Code-->
+         </div>
+     </div>
+   <section>
+    <style>
+        .footer-section ul.footer-link li:before {
+            background-image: url('https://financeseva.com/assets/frontend/images/bullt.png');
+        }
+    </style>
+    
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-12 mb-3 logo-style-footer">
+                    <img src="https://financeseva.com/assets/frontend/images/financeseva_new_logo.jpeg" class="footer-logo" alt="Financeseva">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="footer-wg">
+                        <h3>Delhi Office</h3>
+                        <div class="text-block">
+                            <!-- <p>
+                                611 - DDA Building, Behind Scope Minar, Nearest Metro Nirman Vihar, Laxmi Nagar District Centre, Delhi: - 110092
+                            </p> -->
+                            <p>
+                                Office No. 611, DDA Building, District Centre Laxmi Nagar, Opposite Radhu Place, Delhi, East&nbsp;Delhi&nbsp;-&nbsp;110092
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="footer-wg">
+                        <h3>Gurgaon Office</h3>
+                        <div class="text-block">
+                            <p>Plot No .1291, Sector - 43, Paras Hospital, Gurgaon, Haryana - 122002</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="footer-wg">
+                        <h3>Pune Office</h3>
+                        <div class="text-block">
+                            <p>Wing B 3, Flat No.503, Lunkad Colonnade 1CH5, Viman Nagar, Pune City- 411014</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-2 col-xs-12">
+                    <div class="footer-wg">
+                        <h3>Quick Link</h3>
+                        <div class="text-block">
+                            <ul class="footer-link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Partner</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms Of Use</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-12 follow-style">
+                    <div class="footer-wg">
+                        <h3>Follow</h3>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><img src="https://financeseva.com/assets/frontend/images/icon/f-facebook.svg" alt="Facebook Logo"></a></li>
+                                <li><a href="#"><img src="https://financeseva.com/assets/frontend/images/icon/f-instagram.svg" alt="instagram Logo"></a></li>
+                                <li><a href="#"><img src="https://financeseva.com/assets/frontend/images/icon/f-twiter.svg" alt="Twiter Logo"></a></li>
+                                <li><a href="#"><img src="https://financeseva.com/assets/frontend/images/icon/f-youtube.svg" alt="YouTube Logo"></a></li>
+                                <li><a href="#"><img src="https://financeseva.com/assets/frontend/images/icon/f-linkedin.svg" alt="Linkedin Logo"></a></li>
+                                <!-- <li><a href="#"><img src="assets/frontend/images/icon/WhatsApp.svg.png"></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+            </div>
+    
+            <div class="cont-style-footer">
+                <div class="col-md-3 col-xs-6"><a href="tel:+91-8888888888"><span class="icon"><i class="fa fa-phone"></i></span> +91-8888888888</a></div>
+                <div class="col-md-3 col-xs-6"><a href="mailto:contact@finance.in"><span class="icon"><i class="fa fa-envelope"></i></span> contact@finance.in</a></div>
+            </div>
+    
+        </div>
+    
+    </footer>
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright ©2024 MVN Financial Advisors Private Limited All Rights Reserved<br>CIN - U93000DL2010PTC207204</p>
+                    <span id="siteseal">
+                        <script async="" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=puVrYry4qQB1wuuWkaR4WqFTkbO7CzbnvKnNEnlU4SFeCRcsa2btFKxKYDGE"></script>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap);.oit-head-menu li,.top-address li {
+    font-size: 12px;
+    display: inline-block
+}
+
+
+
+.top-address .icon,ul.top-link li a {
+    color: #fff
+}
+
+.top-address li span {
+    padding-right: 3px;
+    color: #5cc35c
+}
+
+.navbar-default .navbar-brand {
+    color: #777
+}
+
+.navbar-brand {
+    padding: 8px 15px;
+    float: left;
+    height: 56px;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.logo .white-logo img {
+    width: 200px
+}
+
+.logo img {
+    margin-right: 20px
+}
+
+.contact-info-mobile ul,.contact-social-mobile ul,ul.top-address {
+    margin: 0
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent
+}
+
+.navbar-default {
+    border: none;
+    background-color: #fff
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    padding: 18px 0 18px 15px;
+    font-weight: 600;
+    font-size: 13px
+}
+
+footer.footer-section .row,section.Insurance-section .row,section.Tools-section .row,section.about-style .row,section.bank-tab-section .row,section.banner-section .row,section.check_img_add .row,section.credit-report-free-style .row,section.credit-report-section.box-style-1 .row,section.domestic-secured-style .row,section.exporter-importer-section .row,section.footer-bottom .row,section.info-loans-section .row,section.investment-section .row,section.leader-finance .row,section.other-loans-section .row,section.other-loans-section.box-style-2 .row,section.other-loans-section.statutory-services .row,section.partner-section .row,section.personal-need-loan-style .row,section.project-loan-section .row,section.testimonial-section .row,section.unsecured-secured-style .row,ul.num-style {
+    display: flex;
+    flex-wrap: wrap
+}
+
+h2.heading {
+    letter-spacing: .52px;
+    color: #fff;
+    font-size: 29px;
+    line-height: 35px;
+    font-weight: 700
+}
+
+.sulg-heading {
+    text-align: center;
+    letter-spacing: 2.63px;
+    color: #fff;
+    opacity: .8;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.justify-content-center {
+    justify-content: center!important
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%
+}
+
+.co-gap-5 .col {
+    margin: 0 10px
+}
+
+.pt-1 {
+    padding-top: 1em
+}
+
+.pb-1 {
+    padding-bottom: 1em
+}
+
+.pt-2 {
+    padding-top: 2em
+}
+
+.pb-2 {
+    padding-bottom: 2em
+}
+
+.pt-3 {
+    padding-top: 3em
+}
+
+.pb-3 {
+    padding-bottom: 3em
+}
+
+.pt-4 {
+    padding-top: 4em
+}
+
+.pb-4 {
+    padding-bottom: 4em
+}
+
+.pt-5 {
+    padding-top: 5em
+}
+
+.pb-5 {
+    padding-bottom: 5em
+}
+
+.mt-1 {
+    margin-top: 1em
+}
+
+.mb-1 {
+    margin-bottom: 1em
+}
+
+.mt-2 {
+    margin-top: 2em
+}
+
+.mb-2 {
+    margin-bottom: 2em
+}
+
+.mt-3 {
+    margin-top: 3em
+}
+
+.mb-3 {
+    margin-bottom: 3em
+}
+
+.mt-4 {
+    margin-top: 4em
+}
+
+.mb-4 {
+    margin-bottom: 4em
+}
+
+.mt-5 {
+    margin-top: 5em
+}
+
+.mb-5 {
+    margin-bottom: 5em
+}
+
+.bg-deep {
+    background: #f7f7f7
+}
+
+.designation {
+    font-size: 14px;
+    color: #5cc35c;
+    font-weight: 400
+}
+
+.bg-white {
+    background: #fff
+}
+
+.btn-blue:hover {
+    background: no-repeat padding-box #052850;
+    color: #fff
+}
+
+.ans-btn-1:hover,.top-header {
+    background: no-repeat padding-box #093d78
+}
+
+.ans-btn-1:hover {
+    color: #fff
+}
+
+.ans-btn-2:hover {
+    background: #fa7819;
+    color: #fff
+}
+
+.footer-section .footer-logo,.img-fluid {
+    width: 100%
+}
+
+.heading-border-bottom h2.heading,h1.heading {
+    color: #093d78;
+    font-size: 30px;
+    letter-spacing: .66px;
+    font-weight: 600;
+    font-family: Lato,sans-serif
+}
+
+.btn-orange,.credit-report-inner-box a.btn {
+    background: no-repeat padding-box #fa7819;
+    border-radius: 10px
+}
+
+ul.top-link li {
+    display: inline-block;
+    margin: 0 5px
+}
+
+.top-header-right-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+ul.top-soi {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.top-header ul {
+    margin: 0;
+    padding: 0
+}
+
+ul.top-soi li a {
+    height: 47px;
+    width: 30px;
+    display: block;
+    line-height: 42px
+}
+
+.top-header ul a {
+    text-align: left;
+    letter-spacing: .32px;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 45px
+}
+
+.navbar-nav .nav-link>a {
+    font: 600 18px/38px Open Sans;
+    letter-spacing: .36px;
+    color: #000!important
+}
+
+.mainmenu ul.navbar-nav li a {
+    letter-spacing: .36px;
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 38px;
+    font-family: sans-serif
+}
+
+section.banner-section {
+    height: 360px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 70px
+}
+
+.banner-section .text-block {
+    max-width: 530px
+}
+
+.banner-section .text-block h1 {
+    text-align: left;
+    letter-spacing: 0;
+    color: #fff;
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: 700
+}
+
+.banner-section .text-block p {
+    letter-spacing: .48px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px
+}
+
+.btn-orange {
+    color: #fff;
+    padding: 10px 30px
+}
+
+.domestic-items-grid ul,.loan-items-grid ul,.other-loans-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.loan-items-grid ul li {
+    width: calc(100% / 6 - 0px)
+}
+
+.loan-items-grid-inner {
+    text-align: center;
+    padding: 4px;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.loan-items-grid-inner-personal {
+    text-align: center;
+    padding: 9px;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.loan-items-grid-inner span,.loan-items-grid-inner-personal span {
+    display: block;
+    color: #093d78;
+    font-size: 15px;
+    font-weight: 600
+}
+
+.cont-style-footer .col-xs-6,.loan-items-grid {
+    padding: 0
+}
+
+.loan-items-grid-inner img {
+    height: 70px;
+    display: block;
+    margin: 0 auto
+}
+
+.loan-items-grid-inner-personal img {
+    height: 50px;
+    display: block;
+    margin: 0 auto
+}
+
+.personal-need-loan-style {
+    position: relative;
+    top: -65px
+}
+
+.personal-need-loan-style .container {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 35px #00000026;
+    border-radius: 5px
+}
+
+.secured-loan-bg-color {
+    background: linear-gradient(180deg,#fff 0,#d1ecf1 100%) no-repeat padding-box!important
+}
+
+.become-our-partner {
+    color: #083d78!important
+}
+
+.credit-report-inner-box {
+    opacity: 1;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    height: 160px
+}
+
+.credit-report-inner-box a.btn {
+    color: #fff;
+    text-align: center;
+    letter-spacing: .5px;
+    font-size: 18px;
+    margin-top: 17px
+}
+
+.reo-text {
+    text-align: left;
+    letter-spacing: .8px;
+    color: #093d78;
+    font-size: 25px;
+    line-height: 12px;
+    font-weight: 900
+}
+
+.domestic-items-grid ul li {
+    width: calc(100% / 6 - 44px);
+    margin: 0 22px
+}
+
+.domestic-items-grid-inner {
+    padding: 5px
+}
+
+.domestic-items-grid-inner img {
+    display: block;
+    height: 90px;
+    margin-left: -5px
+}
+
+.domestic-items-grid-inner span {
+    text-align: left;
+    letter-spacing: .55px;
+    color: #093d78;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px
+}
+
+.domestic-secured-style {
+    padding-bottom: 20px;
+    background: transparent linear-gradient(180deg,var(--unnamed-color-ffffff) 0,#d1ecf1 100%) 0 0 no-repeat padding-box;
+    background: linear-gradient(180deg,#fff 0,#d1ecf1 100%) no-repeat padding-box;
+    opacity: 1
+}
+
+.bg-gery-bark,.unsecured-secured-style {
+    background: no-repeat padding-box #eff1f6
+}
+
+.unsecured-secured-style {
+    padding-top: 10px;
+    padding-bottom: 20px
+}
+
+.project-items-grid.project-items-grid-mobile ul {
+    padding: 0;
+    margin: 0 -40px 0 70px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.project-items-grid ul li {
+    width: calc(100% / 6 - 40px);
+    margin: 10px
+}
+
+.center-items-grid-inner,.project-loan-section .project-items-grid ul li div a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center
+}
+
+.project-loan-section .project-items-grid ul li div span {
+    text-align: center
+}
+
+.project-items-grid-inner {
+    padding: 10px;
+    height: 100%;
+    background: no-repeat padding-box #b9e8f6;
+    box-shadow: 0 0 7px 0 #00000024;
+    border-radius: 15px;
+    display: block
+}
+
+.btn-blue,.tab-section .nav.nav-tabs li a:hover,.tab-section .nav.nav-tabs li.active a {
+    background: no-repeat padding-box #093d78;
+    color: #fff
+}
+
+.project-items-grid-inner img {
+    width: 80px;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px!important;
+    margin: 0
+}
+
+.project-items-grid-inner span {
+    text-align: left;
+    letter-spacing: 0;
+    color: #093d78;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700
+}
+
+.btn-blue {
+    border-radius: 10px;
+    padding: 10px 30px
+}
+
+.bg-gery-dark {
+    background: no-repeat padding-box #ececec
+}
+
+.box-style-2 .center-items-grid-inner,.exprt-box {
+    background: var(--unnamed-color-ffffff) 0 0 no-repeat padding-box
+}
+
+.exprt-box {
+    background: no-repeat padding-box #fff;
+    box-shadow: 0 2px 8px #0000001a;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0
+}
+
+.exprt-box .exprt-img {
+    margin-right: 15px
+}
+
+.exprt-box .exprt-img img {
+    height: 50px;
+    width: 50px
+}
+
+.exprt-box .exprt-text {
+    text-align: left;
+    letter-spacing: .69px;
+    color: #093d78;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600
+}
+
+.credit-report-section img {
+    height: 90px;
+    margin: 10px 0
+}
+
+.box-style-1 .center-items-grid-inner .equifax-logo {
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic
+}
+
+.equifax-logo img {
+    height: 25px
+}
+
+.other-loans-section ul li {
+    width: calc(100% / 4 - 30px);
+    margin: 15px
+}
+
+.center-items-grid-inner span {
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+.other-loans-section img {
+    height: 90px;
+    width: 90px
+}
+
+.bg-gery-red {
+    background: #f1f1f1
+}
+
+.Insurance-section,.bg-6,.other-loans-section {
+    background: #f5f7fa
+}
+
+.other-loans-section span {
+    text-align: center;
+    letter-spacing: .55px;
+    color: #093d78;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px
+}
+
+.info-box .text-block {
+    text-align: center;
+    letter-spacing: -.24px;
+    color: #303030;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    display: block;
+    width: 100%
+}
+
+.box-style-1 .center-items-grid-inner {
+    height: 100%;
+    box-shadow: 0 2px 12px #00000014;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.box-style-2 .center-items-grid-inner {
+    background: no-repeat padding-box #fff;
+    box-shadow: 0 2px 10px #0000001a;
+    padding: 15px
+}
+
+.ans-btn .ans-btn-1,a.ca-btn {
+    box-shadow: 0 3px 6px #00000029;
+    opacity: 1
+}
+
+.box-style-1 .center-items-grid-inner .text-block,.box-style-2 .center-items-grid-inner .text-block {
+    text-align: center;
+    letter-spacing: .6px;
+    color: #093d78;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.box-style-2 .center-items-grid-inner img {
+    height: 75px
+}
+
+.Tools-section,.investment-section {
+    background: no-repeat padding-box #f0fbff
+}
+
+.Tools-items-grid-inner img {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    display: block
+}
+
+.Insurance-section ul,.footer-section ul.footer-link,.footer-wg .social-icon ul,ul.bank-list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.Tools-items-grid-inner span {
+    display: block;
+    text-align: center;
+    letter-spacing: .55px;
+    color: #093d78;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700
+}
+
+.investment-section span {
+    text-align: center;
+    letter-spacing: .55px;
+    color: #093d78;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.investment-section img,.partner-section img {
+    height: 100px;
+    width: 100px
+}
+
+.Insurance-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.Insurance-section ul li {
+    width: calc(100% / 5 - 6px)
+}
+
+.items-left-grid-inner {
+    height: 100%;
+    text-align: left;
+    padding: 6px 0
+}
+
+.items-left-grid-inner img {
+    width: 80px;
+    height: 80px
+}
+
+.items-left-grid-inner span {
+    display: block;
+    text-align: left;
+    letter-spacing: .48px;
+    color: #093d78;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+section.leader-finance {
+    position: relative;
+    background-size: cover;
+    background-position: center
+}
+
+section.leader-finance:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: no-repeat padding-box #191919;
+    opacity: .8
+}
+
+ul.num-style li .big-text {
+    letter-spacing: 1.44px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    font-weight: 700
+}
+
+ul.num-style li .small-text {
+    text-align: center;
+    letter-spacing: .5px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.bg-5 {
+    background: #e9e9e9
+}
+
+.partner-section span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #093d78
+}
+
+.tab-section .nav.nav-tabs {
+    border: none;
+    justify-content: center;
+    display: flex
+}
+
+.tab-section .nav.nav-tabs li {
+    margin: 0 15px;
+    padding: initial
+}
+
+.tab-section .nav.nav-tabs li a {
+    padding: 10px 20px;
+    border: 1px solid #093d78;
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: .54px;
+    color: #093d78;
+    font-size: 18px;
+    line-height: 20px
+}
+
+ul.bank-list {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.ans-btn a,a.ca-btn,a.ca-btn:hover+.hover-ca-bx,img.ca-image-custom:hover+.hover-ca-bx {
+    display: block
+}
+
+ul.bank-list li {
+    width: calc(100% / 6 - 20px);
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 2px 15px #cadaf1f2;
+    border-radius: 10px;
+    padding: 9px;
+    align-content: center;
+    display: flex;
+    height: 100px
+}
+
+ul.bank-list li img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: scale-down
+}
+
+.tab-content .tab-pane.active {
+    opacity: 1
+}
+
+.testimonial-section .carousel-control {
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    background: #fff0;
+    color: #000;
+    text-shadow: none;
+    transform: translate(0,-70%)
+}
+
+.ans-btn .ans-btn-1,.cont-style-footer .icon i,a.ca-btn {
+    background: no-repeat padding-box #093d78
+}
+
+.testimonial-section .carousel-inner {
+    min-height: auto!important
+}
+
+.testimonial-section {
+    margin-top: 15px
+}
+
+.testimonial-section blockquote {
+    border: none
+}
+
+.testimonial-section .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    line-height: 4px!important;
+    outline: 0
+}
+
+.testimonial-section .loop.owl-carousel.owl-theme.owl-loaded {
+    position: relative;
+    padding: 0 50px
+}
+
+.testimonial-section .owl-nav .owl-prev {
+    left: 0
+}
+
+.testimonial-section .owl-nav .owl-next {
+    right: 0
+}
+
+.testimonial-section .owl-nav button span {
+    font-size: 60px;
+    line-height: 60px
+}
+
+.footer-section {
+    background: #13232f;
+    padding: 40px 0
+}
+
+.footer-section .footer-wg h3 {
+    letter-spacing: .55px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.footer-section .text-block p,.footer-section ul.footer-link li a {
+    letter-spacing: .55px;
+    color: #fff;
+    opacity: .6;
+    font-size: 16px;
+    line-height: 25px
+}
+
+.footer-section ul.footer-link li {
+    padding-left: 25px;
+    position: relative;
+    text-align: left
+}
+
+.footer-section ul.footer-link li:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    display: block;
+    top: 1px;
+    background-size: 13px;
+    z-index: 9;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.footer-wg .social-icon ul li img {
+    width: 20px;
+    height: 20px
+}
+
+.footer-wg .social-icon ul li {
+    margin: 5px 0 0 25px
+}
+
+.footer-bottom {
+    background: #0d1b26;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 56px
+}
+
+.footer-bottom p {
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+
+.fix-bottom {
+    position: fixed;
+    bottom: 0;
+    background: #f8f6f6;
+    width: 100%;
+    z-index: 9
+}
+
+.ans-btn .ans-btn-1 {
+    border-radius: 26px;
+    position: absolute;
+    top: -46px;
+    color: #fff
+}
+
+.ans-btn .ans-btn-2,.hover-ca-bx {
+    background: no-repeat padding-box #fff
+}
+
+.ans-btn .ans-btn-2 {
+    border: 2px solid #fa7819;
+    border-radius: 5px;
+    opacity: 1;
+    color: #fa7819
+}
+
+.hover-ca-bx,a.ca-btn {
+    border-radius: 5px;
+    position: absolute
+}
+
+.ans-btn a {
+    padding: 10px 5px;
+    text-align: center;
+    width: 190px;
+    margin: 5px 0
+}
+
+.fix-bottom .text-block-bold p {
+    text-align: left;
+    letter-spacing: 0;
+    color: #093d78;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 4px 0
+}
+
+.hover-ca-bx,.hover-ca-bx p,.hover-ca-bx p b,a.ca-btn {
+    text-align: center
+}
+
+.fix-bottom .ans-img {
+    position: relative
+}
+
+.fix-bottom .ans-img img {
+    width: 100%;
+    position: absolute;
+    bottom: -63px
+}
+
+.hover-ca-bx {
+    top: -64px;
+    width: 240px;
+    right: 100%;
+    left: 100%;
+    box-shadow: 0 2px 10px #0000001a;
+    opacity: .95;
+    padding: 10px;
+    display: none;
+    z-index: 9
+}
+
+a.ca-btn {
+    margin: 0 auto;
+    letter-spacing: .36px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    top: 34px
+}
+
+.hover-ca-bx p {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: .18px;
+    color: #707070
+}
+
+.hover-ca-bx p b {
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: #093d78
+}
+
+.hover-ca-bx .read-mo {
+    text-decoration: underline;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: #fa7819
+}
+
+.cont-style-footer a {
+    display: flex;
+    align-items: center;
+    letter-spacing: .48px;
+    color: #fff;
+    opacity: .6
+}
+
+.cont-style-footer .icon i {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 11px 7px
+}
+
+.cont-style-footer a span.icon {
+    margin-right: 4px
+}
+
+.cont-style-footer {
+    position: relative;
+    margin-top: -30px
+}
+
+@media screen and (max-width: 991px) and (min-width:500px) {
+    .fix-bottom .row {
+        display:flex!important
+    }
+
+    .fix-bottom .row .text-block-bold p {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .domestic-items-grid ul li,.loan-items-grid ul li {
+        width:calc(100% / 4 - 0px)!important
+    }
+
+    .domestic-secured-style,section.exporter-importer-section,section.other-loans-section,section.project-loan-section {
+        box-shadow: 0 0 10px #0000000d;
+        border: 1px solid #d2e1f2
+    }
+
+    .row.d-mobile-none,.swipe-up-bottom {
+        opacity: 1;
+        background: #fff
+    }
+
+    body {
+        background-color: #f5f7fa
+    }
+
+    .cont-style-footer .col-md-3.col-xs-6,section.exporter-importer-section .col-md-3.col-xs-6 {
+        width: 50%
+    }
+
+    .mb-3 {
+        margin-bottom: 1em
+    }
+
+    .footer-section,.logo-style-footer {
+        margin-bottom: 0
+    }
+
+    .mt-3 {
+        margin-top: 1em
+    }
+
+    .col-md-12 {
+        width: 100%
+    }
+
+    .re-text-left {
+        text-align: center!important;
+        font-size: 25px
+    }
+
+    h1.heading {
+        font-size: 20px!important
+    }
+
+    .heading-border-bottom {
+        border-bottom: 1px solid #d2e1f2;
+        display: flex;
+        align-items: center
+    }
+
+    .heading-border-bottom h1.heading {
+        margin: 12px 0
+    }
+
+    .contact-social-mobile ul.top-address {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center
+    }
+
+    .contact-social-mobile+.col-md-2 ul.top-address {
+        margin: 0;
+        padding: 0
+    }
+
+    section ul.top-address {
+        margin: 4px 0!important
+    }
+
+    .contact-info-mobile {
+        padding: 0
+    }
+
+    .contact-info-mobile ul.top-address {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    section.banner-section {
+        background-position: center center;
+        height: 300px!important
+    }
+
+    .banner-section .text-block h1 {
+        font-size: 27px!important;
+        line-height: 1.5em!important;
+        text-align: center!important
+    }
+
+    .fix-bottom .row.d-mobile-none .text-block-bold p,.footer-section .footer-wg,section.banner-section .text-block {
+        text-align: center
+    }
+
+    .banner-section .text-block p {
+        font-size: 14px!important;
+        line-height: 1.5em!important
+    }
+
+    .personal-need-loan-style {
+        position: relative;
+        top: 0!important;
+        padding: 0 15px;
+        margin-top: -40px!important
+    }
+
+    .personal-need-loan-style .loan-items-grid {
+        margin: 0 -15px
+    }
+
+    .loan-items-grid-inner img,.loan-items-grid-inner-personal img {
+        height: 30px!important
+    }
+
+    .investment-section img,.other-loans-section img,.partner-section img {
+        height: 60px;
+        width: 60px
+    }
+
+    .loan-items-grid-inner span,.loan-items-grid-inner-personal span {
+        font-size: 10px!important
+    }
+
+    .domestic-secured-style {
+        background: #fff!important;
+        position: relative;
+        padding-top: 0!important;
+        margin-top: 25px
+    }
+
+    section.check_img_add,section.credit-report-free-style {
+        display: none
+    }
+
+    .domestic-items-grid ul li {
+        margin: 0!important
+    }
+
+    .domestic-items-grid .domestic-items-grid-inner img {
+        height: 65px!important
+    }
+
+    .domestic-items-grid-inner span {
+        font-size: 11px!important;
+        line-height: 12px!important;
+        font-weight: 600!important
+    }
+
+    .domestic-items-grid-inner {
+        padding: 5x 5px 5px!important
+    }
+
+    .unsecured-secured-style {
+        padding-top: 0!important;
+        padding-bottom: 20px!important;
+        margin-top: 15px!important;
+        background: no-repeat padding-box #fff!important;
+        box-shadow: 0 0 10px #0000000d!important;
+        border: 1px solid #d2e1f2
+    }
+
+    section.project-loan-section {
+        margin-top: 15px;
+        background: no-repeat padding-box #fff;
+        padding-top: 0
+    }
+
+    .project-items-grid.project-items-grid-mobile ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    .project-items-grid ul li {
+        width: calc(100% / 4 - 10px);
+        margin: 5px
+    }
+
+    .project-items-grid-inner img {
+        width: 50px
+    }
+
+    section.project-loan-section .project-items-grid {
+        margin-top: 15px;
+        margin-left: -10px;
+        margin-right: -10px
+    }
+
+    .project-items-grid-inner {
+        padding: 10px
+    }
+
+    section.project-loan-section .project-items-grid-inner img {
+        margin-bottom: 0!important
+    }
+
+    .project-items-grid-inner span {
+        font-size: 10px;
+        line-height: 13px
+    }
+
+    section.exporter-importer-section {
+        background: no-repeat padding-box #fff;
+        margin-top: 15px;
+        padding-top: 0!important
+    }
+
+    .exprt-box .exprt-text {
+        font-size: 10px;
+        line-height: 16px;
+        font-weight: 700
+    }
+
+    section.other-loans-section {
+        background: no-repeat padding-box #fff;
+        padding-top: 0;
+        padding-bottom: 25px;
+        margin-top: 15px
+    }
+
+    .other-loans-section span {
+        text-align: center;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 13px
+    }
+
+    .other-loans-section ul li {
+        width: calc(100% / 4 - 0px);
+        margin: 15px 0 0;
+        padding: 5px
+    }
+
+    section.other-loans-section .center-items-grid-inner {
+        justify-content: end;
+        box-shadow: none
+    }
+
+    section.info-loans-section {
+        background: no-repeat padding-box #fa7819;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 15px
+    }
+
+    section.info-loans-section img {
+        background: #fff;
+        border-radius: 50%;
+        padding: 8px;
+        height: 50px;
+        width: 50px
+    }
+
+    .info-box .text-block {
+        color: #fff;
+        font-size: 10px;
+        line-height: 14px
+    }
+
+    section.credit-report-section.box-style-1 {
+        padding-top: 0;
+        margin-top: 15px;
+        background: no-repeat padding-box #fff;
+        box-shadow: 0 0 10px #0000000d;
+        border: 1px solid #d2e1f2;
+        padding-bottom: 20px
+    }
+
+    .box-style-1 .center-items-grid-inner {
+        box-shadow: 0 2px 12px #00000014;
+        padding: 0;
+        border-radius: 5px
+    }
+
+    section.credit-report-section.box-style-1 .col-xs-3 {
+        padding: 0 3px;
+        margin-top: 15px
+    }
+
+    section.credit-report-section.box-style-1 .col-xs-3 img {
+        height: 40px
+    }
+
+    section.credit-report-section.box-style-1 .col-xs-3 .equifax-logo img {
+        height: 20px
+    }
+
+    .box-style-1 .center-items-grid-inner .text-block {
+        text-align: center;
+        letter-spacing: .6px;
+        color: #093d78;
+        width: 100%;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px
+    }
+
+    .box-style-1 .center-items-grid-inner .equifax-logo {
+        color: red;
+        font-size: 15px;
+        font-weight: 900;
+        font-style: italic
+    }
+
+    section.credit-report-section.box-style-1 .col-xs-3 .center-items-grid-inner.bg-white {
+        height: 100%;
+        padding: 12px 0
+    }
+
+    .about-style .row,.footer-section .follow-style .footer-wg h3,section.credit-report-section.box-style-1 .col-md-10 .row {
+        margin: 0
+    }
+
+    .box-style-2 .center-items-grid-inner {
+        background: var(--unnamed-color-ffffff) 0 0 no-repeat padding-box;
+        background: no-repeat padding-box #fff;
+        box-shadow: 0 2px 10px #0000001a;
+        padding: 1px 15px;
+        height: 100%
+    }
+
+    section.other-loans-section.box-style-2 .col {
+        width: 50%;
+        width: calc(100% / 4 - 15px)!important;
+        flex-basis: inherit;
+        -ms-flex-positive: 1;
+        flex-grow: inherit;
+        margin: 7px 5px
+    }
+
+    section.other-loans-section.box-style-2 .col img {
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 2px 10px #0000001a;
+        border-radius: 50%;
+        padding: 10px
+    }
+
+    .Insurance-section,.Tools-section,.bank-tab-section,.investment-section {
+        box-shadow: 0 0 10px #0000000d;
+        border: 1px solid #d2e1f2;
+        background: no-repeat padding-box #fff
+    }
+
+    section.other-loans-section.box-style-2 .text-block.mt-2 {
+        font-size: 11px;
+        line-height: 13px;
+        margin-top: 8px
+    }
+
+    section.other-loans-section.box-style-2 .row.justify-content-center {
+        justify-content: flex-start!important
+    }
+
+    .Insurance-section,.Tools-section {
+        padding-top: 0;
+        padding-bottom: 15px;
+        margin-top: 15px
+    }
+
+    .Tools-items-grid-inner img {
+        height: 60px;
+        width: 60px;
+        margin: 0 auto
+    }
+
+    .Tools-items-grid-inner span {
+        text-align: center;
+        font-size: 9px;
+        line-height: 13px
+    }
+
+    .statutory-services span {
+        text-align: center!important
+    }
+
+    .statutory-services .center-items-grid-inner {
+        justify-content: center!important
+    }
+
+    .investment-section {
+        padding-top: 0;
+        margin-top: 15px;
+        padding-bottom: 20px
+    }
+
+    .investment-section span {
+        text-align: center;
+        font-size: 9px;
+        line-height: 16px
+    }
+
+    .bank-tab-section .tab-content.mt-3,.bank-tab-section .tab-section,.investment-section .col-md-3.col-xs-3,.partner-section .items-center.row {
+        margin-top: 15px
+    }
+
+    .Insurance-section ul li {
+        width: calc(100% / 4 - 0px)
+    }
+
+    .Insurance-section .items-left-grid-inner span {
+        text-align: center;
+        font-size: 10px
+    }
+
+    .Insurance-section ul {
+        justify-content: flex-start
+    }
+
+    .Insurance-section ul li img {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        display: block
+    }
+
+    .about-style {
+        padding: 7px 0 15px;
+        margin-top: 15px
+    }
+
+    .about-style .col-md-12.mb-2 {
+        margin-bottom: 4px
+    }
+
+    .about-style .row p {
+        letter-spacing: .28px;
+        color: #000;
+        font-size: 13px;
+        line-height: 19px
+    }
+
+    section.leader-finance ul.num-style {
+        padding: 0;
+        margin: 0
+    }
+
+    section.leader-finance ul.num-style li .big-text {
+        font-size: 24px
+    }
+
+    section.leader-finance ul.num-style li .small-text {
+        font-size: 11px;
+        line-height: 13px
+    }
+
+    section.leader-finance h2.heading {
+        letter-spacing: .22px;
+        color: #fff;
+        font-size: 22px!important;
+        line-height: 12px
+    }
+
+    p.text-center.text-white.sulg-heading {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 15px
+    }
+
+    section.leader-finance {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    .partner-section {
+        padding-top: 0;
+        padding-bottom: 15px
+    }
+
+    .partner-section img {
+        margin-bottom: 8px
+    }
+
+    .partner-section span {
+        text-align: center;
+        font-size: 9px;
+        letter-spacing: .21px;
+        color: #093d78;
+        line-height: 13px
+    }
+
+    .bank-tab-section {
+        padding-top: 0
+    }
+
+    .fix-bottom,.row.d-mobile-none {
+        box-shadow: 0 -5px 5px #00000008
+    }
+
+
+
+
+    .footer-bottom {
+        padding-bottom: 62px
+    }
+
+    .footer-section {
+        background: #13232f;
+        padding: 20px 0 0
+    }
+
+    .footer-section img.footer-logo {
+        width: 204px;
+        margin: 0 auto;
+        display: block
+    }
+
+    .footer-section .footer-wg p {
+        text-align: center;
+        letter-spacing: .3px;
+        color: #fff;
+        font-size: 14px
+    }
+
+    .footer-section .follow-style .footer-wg {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center
+    }
+
+    .footer-section ul.footer-link {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 267px
+    }
+
+    .footer-section ul.footer-link li {
+        padding-left: 25px;
+        position: relative;
+        text-align: left;
+        width: calc(100% / 2)
+    }
+
+    .footer-section .follow-style .footer-wg ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px
+    }
+
+    .footer-section .follow-style .footer-wg ul li {
+        margin: 0 7px
+    }
+
+    .cont-style-footer {
+        position: relative;
+        margin-top: 21px!important;
+        display: block
+    }
+
+    .cont-style-footer a {
+        margin-bottom: 15px;
+        font-size: 12px
+    }
+
+    .cont-style-footer .icon i {
+        width: 30px;
+        height: 30px;
+        padding: 10px 7px
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+        line-height: 19px
+    }
+
+    .d-sm-none {
+        display: none
+    }
+
+    .fix-bottom .ans-btn,.row.d-mobile-none .ans-btn {
+        display: flex
+    }
+
+    .fix-bottom .ans-btn a {
+        margin-right: 0!important;
+        margin-left: auto!important
+    }
+
+    .fix-bottom .ans-btn .ans-btn-1 {
+        right: auto;
+        left: 50%;
+        transform: translate(-52%);
+        z-index: 999;
+        display: block;
+        margin: -5px;
+        margin-right: auto!important;
+        margin-left: auto!important
+    }
+
+    .d-mobile-none .ans-img img.img {
+        position: relative;
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+        bottom: 0
+    }
+
+    .d-mobile-none .ans-img a.ca-btn {
+        position: relative;
+        width: 180px;
+        line-height: 40px;
+        top: -30px
+    }
+
+    .row.d-mobile-none .ans-btn a {
+        position: static;
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 10px 3px;
+        line-height: 14px;
+        margin: 0 7px 15px
+    }
+
+    .swipe-up-bottom {
+        position: relative;
+        z-index: 99;
+        margin: 0 -15px;
+        border-bottom: none;
+        display: block
+    }
+
+    .swipe-up-bottom a {
+        text-align: center;
+        letter-spacing: .28px;
+        display: block;
+        font-size: 17px;
+        line-height: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 20px 0;
+        color: #fa7819
+    }
+
+    .fix-bottom {
+        background: #fff;
+        border: 1px solid #d2e1f2;
+        border-radius: 0
+    }
+
+    .fix-bottom .col-md-3.col-xs-8 {
+        position: static!important
+    }
+
+    .swipe-up-bottom a span {
+        color: #093d78
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .swipe-up-bottom {
+        display:none
+    }
+
+    .d-mobile-none {
+        display: block!important
+    }
+}
+
+    </style>
+</body>
+</html>
